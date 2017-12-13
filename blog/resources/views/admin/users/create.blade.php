@@ -1,11 +1,19 @@
-<form method="POST" action="/users">
+<div>
+	<form method="POST" action="/users">
 
 	{!! csrf_field() !!}
-	<fieldset>
-	Name:    <input type='text' name="name"> <br/>
-	Email:   <input type="email" name="email"><br/>
-	Password:<input type="password" name="password"><br/>
-	<input type="submit" value="create" >
-	</fieldset>
+	<div>Name:   </div>
+	 <div><input type='text' name="name"> <br/>
+	</div> 
+
+	<div>Email:   </div>
+	<div><input type="email" name="email"><br/></div>
+
+	<div>Password:</div>
+	<div><input type="password" name="password"><br/></div>
+
+	
+	<div><input type="submit" value="create" ></div>
 
 </form>
+</div>

@@ -20,6 +20,6 @@ Route::get('users', ['uses' => 'UsersController@index']);
 
 Route::get('users/create', ['uses' => 'UsersController@create']);
 
-Route::get('users', ['uses' => 'UsersController@store']);
+Route::post('users', ['uses' => 'UsersController@store']);
 
 
