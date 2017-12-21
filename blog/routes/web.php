@@ -23,3 +23,7 @@ Route::get('users/create', ['uses' => 'UsersController@create']);
 Route::post('users', ['uses' => 'UsersController@store']);
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
